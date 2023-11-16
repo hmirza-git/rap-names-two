@@ -3,7 +3,7 @@ const app = express();
 const PORT = 8000;
 
 const rappers = {
-  "21Savage": {
+  "21 Savage": {
     realName: "Shéyaa Bin Abraham-Joseph",
     age: 29,
     starSign: "Libra",
