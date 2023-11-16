@@ -8,7 +8,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "/main.js"
+      "dest": "/index.html"
     }
   ]
 }
