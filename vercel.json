@@ -7,6 +7,10 @@
       "dest": "/server.js"
     },
     {
+      "src": "/main/(.*)",
+      "dest": "/main.js"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
