@@ -3,7 +3,8 @@ const app = express();
 const PORT = 8000;
 
 const rappers = {
-  "21Savage": {
+  "21savage": {
+    stageName: "21 Savage",
     realName: "Shéyaa Bin Abraham-Joseph",
     age: 29,
     starSign: "Libra",
@@ -12,14 +13,16 @@ const rappers = {
     passedAway: false,
     deathNote: "alive",
   },
-  asapRocky: {
+  asaprocky: {
+    stageName: "ASAP Rocky",
     realName: "Rakim Athelaston Mayers",
     age: 33,
     starSign: "Libra",
     passedAway: false,
     deathNote: "alive",
   },
-  bigL: {
+  bigl: {
+    stageName: "Big L",
     realName: "Lamont Coleman",
     age: 24,
     starSign: "Taurus",
@@ -28,7 +31,8 @@ const rappers = {
     passedAway: true,
     deathNote: "Big L passed away on February 15, 1999",
   },
-  biggieSmalls: {
+  biggiesmalls: {
+    stageName: "Biggie Smalls",
     realName: "Christopher George Latore Wallace",
     age: 24,
     starSign: "Taurus",
@@ -37,7 +41,8 @@ const rappers = {
     passedAway: true,
     deathNote: "The Notorious B.I.G. passed away on March 9, 1997",
   },
-  cardiB: {
+  cardib: {
+    stageName: "Cardi B",
     realName: "Belcalis Marlenis Almánzar",
     age: 29,
     starSign: "Libra",
@@ -46,7 +51,8 @@ const rappers = {
     passedAway: false,
     deathNote: "alive",
   },
-  chanceTheRapper: {
+  chancetherapper: {
+    stageName: "Chance The Rapper",
     realName: "Chancelor Johnathan Bennett",
     age: 29,
     starSign: "Aries",
@@ -56,6 +62,7 @@ const rappers = {
     deathNote: "alive",
   },
   drake: {
+    stageName: "Drake",
     realName: "Aubrey Drake Graham",
     age: 35,
     starSign: "Scorpio",
@@ -65,6 +72,7 @@ const rappers = {
     deathNote: "alive",
   },
   eazye: {
+    stageName: "Eazy-E",
     realName: "Eric Lynn Wright",
     age: 30,
     starSign: "Virgo",
@@ -74,6 +82,7 @@ const rappers = {
     deathNote: "Eazy-E passed away on March 26, 1995",
   },
   eminem: {
+    stageName: "Eminem",
     realName: "Marshall Bruce Mathers III",
     age: 49,
     starSign: "Libra",
@@ -82,7 +91,8 @@ const rappers = {
     passedAway: false,
     deathNote: "alive",
   },
-  jCole: {
+  jcole: {
+    stageName: "J. Cole",
     realName: "Jermaine Lamarr Cole",
     age: 37,
     starSign: "Capricorn",
@@ -91,7 +101,8 @@ const rappers = {
     passedAway: false,
     deathNote: "alive",
   },
-  juiceWrld: {
+  juicewrld: {
+    stageName: "Juice WRLD",
     realName: "Jarad Anthony Higgins",
     age: 21,
     starSign: "Sagittarius",
@@ -100,7 +111,8 @@ const rappers = {
     passedAway: true,
     deathNote: "Juice WRLD passed away on December 8, 2019",
   },
-  kanyeWest: {
+  kanyewest: {
+    stageName: "Kanye West",
     realName: "Kanye Omari West",
     age: 44,
     starSign: "Gemini",
@@ -109,7 +121,8 @@ const rappers = {
     passedAway: false,
     deathNote: "alive",
   },
-  kendrickLamar: {
+  kendricklamar: {
+    stageName: "Kendrick Lamar",
     realName: "Kendrick Lamar Duckworth",
     age: 35,
     starSign: "Gemini",
@@ -118,7 +131,8 @@ const rappers = {
     passedAway: false,
     deathNote: "alive",
   },
-  lilBaby: {
+  lilbaby: {
+    stageName: "Lil Baby",
     realName: "Dominique Armani Jones",
     age: 27,
     starSign: "Sagittarius",
@@ -127,7 +141,8 @@ const rappers = {
     passedAway: false,
     deathNote: "alive",
   },
-  lilUziVert: {
+  liluzivert: {
+    stageName: "Lil Uzi Vert",
     realName: "Symere Woods",
     age: 27,
     starSign: "Leo",
@@ -136,7 +151,8 @@ const rappers = {
     passedAway: false,
     deathNote: "alive",
   },
-  macMiller: {
+  macmiller: {
+    stageName: "Mac Miller",
     realName: "Malcolm James McCormick",
     age: 26,
     starSign: "Capricorn",
@@ -145,7 +161,8 @@ const rappers = {
     passedAway: true,
     deathNote: "Mac Miller passed away on September 7, 2018",
   },
-  meekMill: {
+  meekmill: {
+    stageName: "Meek Mill",
     realName: "Robert Rihmeek Williams",
     age: 35,
     starSign: "Taurus",
@@ -154,7 +171,8 @@ const rappers = {
     passedAway: false,
     deathNote: "alive",
   },
-  meganTheeStallion: {
+  megantheestallion: {
+    stageName: "Megan Thee Stallion",
     realName: "Megan Jovon Ruth Pete",
     age: 27,
     starSign: "Aquarius",
@@ -164,6 +182,7 @@ const rappers = {
     deathNote: "alive",
   },
   nas: {
+    stageName: "Nas",
     realName: "Nasir Jones",
     age: 48,
     starSign: "Virgo",
@@ -172,7 +191,8 @@ const rappers = {
     passedAway: false,
     deathNote: "alive",
   },
-  nickiMinaj: {
+  nickiminaj: {
+    stageName: "Nicki Minaj",
     realName: "Onika Tanya Maraj",
     age: 39,
     starSign: "Sagittarius",
@@ -181,7 +201,8 @@ const rappers = {
     passedAway: false,
     deathNote: "alive",
   },
-  nipseyHussle: {
+  nipseyhussle: {
+    stageName: "Nipsey Hussle",
     realName: "Ermias Joseph Asghedom",
     age: 33,
     starSign: "Leo",
@@ -190,7 +211,8 @@ const rappers = {
     passedAway: true,
     deathNote: "Nipsey Hussle passed away on March 31, 2019",
   },
-  notoriousBig: {
+  notoriousbig: {
+    stageName: "The Notorious B.I.G.",
     realName: "Christopher George Latore Wallace",
     age: 24,
     starSign: "Taurus",
@@ -199,7 +221,18 @@ const rappers = {
     passedAway: true,
     deathNote: "The Notorious B.I.G. passed away on March 9, 1997",
   },
-  popSmoke: {
+  biggie: {
+    stageName: "The Notorious B.I.G. / Biggie",
+    realName: "Christopher George Latore Wallace",
+    age: 24,
+    starSign: "Taurus",
+    birthDate: "May 21, 1972",
+    birthPlace: "Brooklyn, New York, USA",
+    passedAway: true,
+    deathNote: "The Notorious B.I.G. passed away on March 9, 1997",
+  },
+  popsmoke: {
+    stageName: "Pop Smoke",
     realName: "Bashar Barakah Jackson",
     age: 20,
     starSign: "Cancer",
@@ -208,7 +241,8 @@ const rappers = {
     passedAway: true,
     deathNote: "Pop Smoke passed away on February 19, 2020",
   },
-  travisScott: {
+  travisscott: {
+    stageName: "Travis Scott",
     realName: "Jacques Webster II",
     age: 30,
     starSign: "Taurus",
@@ -217,7 +251,8 @@ const rappers = {
     passedAway: false,
     deathNote: "alive",
   },
-  trippieRedd: {
+  trippieredd: {
+    stageName: "Trippie Redd",
     realName: "Michael Lamar White IV",
     age: 23,
     starSign: "Gemini",
@@ -226,7 +261,8 @@ const rappers = {
     passedAway: false,
     deathNote: "alive",
   },
-  tylerTheCreator: {
+  tylerthecreator: {
+    stageName: "Tyler The Creator",
     realName: "Tyler Gregory Okonma",
     age: 30,
     starSign: "Pisces",
@@ -235,7 +271,8 @@ const rappers = {
     passedAway: false,
     deathNote: "alive",
   },
-  wizKhalifa: {
+  wizkhalifa: {
+    stageName: "Wiz Khalifa",
     realName: "Cameron Jibril Thomaz",
     age: 34,
     starSign: "Virgo",
@@ -245,6 +282,7 @@ const rappers = {
     deathNote: "alive",
   },
   xxxtentacion: {
+    stageName: "XXXTentacion",
     realName: "Jahseh Dwayne Ricardo Onfroy",
     age: 20,
     starSign: "Aquarius",
@@ -254,6 +292,7 @@ const rappers = {
     deathNote: "XXXTentacion passed away on June 18, 2018",
   },
   yg: {
+    stageName: "YG",
     realName: "Keenon Daequan Ray Jackson",
     age: 32,
     starSign: "Pisces",
@@ -263,6 +302,7 @@ const rappers = {
     deathNote: "alive",
   },
   unKnown: {
+    stageName: "unKnown",
     realName: "unKnown",
     age: "unKnown",
     starSign: "unKnown",
@@ -282,7 +322,9 @@ app.get("/api", (request, response) => {
 });
 
 app.get("/api/:rapperName", (request, response) => {
-  const rapperNameParam = request.params.rapperName.toLowerCase();
+  const rapperNameParam = request.params.rapperName
+    .toLowerCase()
+    .replace(/ /g, "");
   if (rappers[rapperNameParam]) {
     response.json(rappers[rapperNameParam]);
   } else {
