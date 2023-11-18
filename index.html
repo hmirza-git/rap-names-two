@@ -12,6 +12,21 @@
     <button>Let me know!</button>
     <h2>Rapper Real Name</h2>
 
-    <script src="server.js"></script>
+    <script>
+      alert("hi");
+      const inputEl = document.querySelector("input");
+      async function rapperAPI(input) {
+        const res = await fetch(
+          `https://rap-names-two.vercel.app/api/${input}`
+        );
+        const data = await res.json();
+        console.log(data);
+        document.querySelector("h2").innerHTML = data.realName;
+      }
+
+      document.querySelector("button").addEventListener("click", () => {
+        rapperAPI(inputEl.value);
+      });
+    </script>
   </body>
 </html>
