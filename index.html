@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <h1>Rappers Name Api</h1>
@@ -14,7 +13,9 @@
 
     <script>
       alert("hi");
+
       const inputEl = document.querySelector("input");
+
       async function rapperAPI(input) {
         const res = await fetch(
           `https://rap-names-two.vercel.app/api/${input}`

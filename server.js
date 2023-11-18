@@ -3,7 +3,23 @@ const cors = require("cors");
 const app = express();
 const PORT = 8000;
 
+// Set headers before any route handling
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  next();
+});
+
+// Enable CORS for all routes
 app.use(cors());
+
+// Your existing routes and route handling code
+
+// Handle OPTIONS requests (preflight requests)
+app.options("*", cors());
 // app.use(express.static("public"));
 
 const rappers = {
